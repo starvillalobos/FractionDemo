@@ -1,0 +1,13 @@
+public class FractionsVillalobosEstrella {
+	final static int number = 250;
+	public static void main(String[] args) {
+		System.out.println("Number: " + sumOfFractions(number));
+	}
+	public static double sumOfFractions(int number) {
+		double fraction = 0;
+		for (int i = 1; i <= number; i++) {
+			fraction+= i/(double)(number - (i-1));
+		}
+		return fraction;
+	}
+}
